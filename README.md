@@ -1,4 +1,4 @@
-# amlro_gui
+# 🧪 amlro_gui
 
 A web interface for [AMLRO](https://github.com/RxnRover/amlro) (Active Machine
 Learning Reaction Optimizer) that lets a bench chemist run a full
@@ -7,16 +7,25 @@ collect initial training data, then iteratively review AI-suggested reaction
 conditions, record results, and let the model retrain each cycle — without
 writing any Python.
 
-## Contents
+![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-3-000000?logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/react-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-6.0-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-8-646CFF?logo=vite&logoColor=white)
+![Status](https://img.shields.io/badge/status-active%20development-brightgreen)
 
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Getting started](#getting-started)
-- [Related projects](#related-projects)
-- [Citation](#citation)
-- [License](#license)
+## 📖 Contents
 
-## Overview
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Getting started](#-getting-started)
+- [Related projects](#-related-projects)
+- [Citation](#-citation)
+- [License](#-license)
+
+## 🔬 Overview
+
+<img src="frontend/src/assets/AMLRO_workflow.jpg" alt="AMLRO active-learning workflow: define reaction space, sample initial data, train and predict, get experimental feedback, repeat" width="360" align="right" />
 
 A reaction-optimization campaign has three phases, each with its own screen:
 
@@ -33,7 +42,9 @@ Every experiment's state is file-backed (not stored in a session cookie), so
 closing the browser or restarting the app never loses progress, and past
 experiments can be resumed, listed, or removed from a landing page.
 
-## Architecture
+<br clear="right"/>
+
+## 🏗️ Architecture
 
 - **Backend** (`backend/`) — Flask, as a pure JSON API (no server-rendered
   templates) behind a thin routing layer, a Pydantic-validated schema layer,
@@ -45,7 +56,7 @@ experiments can be resumed, listed, or removed from a landing page.
 - Served as one origin in production (the built frontend as static files
   behind the Flask app).
 
-## Getting started
+## 🚀 Getting started
 
 ### Backend
 
@@ -74,7 +85,7 @@ Runs on `http://127.0.0.1:5173` and proxies `/api/*` to the backend on port
 - `npm run format` — Prettier
 - `npm run build` — type-checks (`tsc -b`) then builds to `dist/`
 
-## Related projects
+## 🔗 Related projects
 
 - **[AMLRO](https://github.com/RxnRover/amlro)** — the active-learning
   reaction-optimization engine this GUI wraps. An open-source framework that
@@ -87,7 +98,7 @@ Runs on `http://127.0.0.1:5173` and proxies `/api/*` to the backend on port
   optimization logic of its own; every reaction-scope, training, and
   prediction computation is delegated to AMLRO.
 
-## Citation
+## 📄 Citation
 
 If you use AMLRO (the optimization engine this GUI wraps) in your work,
 please cite:
@@ -109,6 +120,6 @@ please cite:
 }
 ```
 
-## License
+## 📜 License
 
 _Not yet set for this repo — see the note below._

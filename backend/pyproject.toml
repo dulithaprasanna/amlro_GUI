@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amlro-gui"
+version = "0.1.0"
+description = "AMLRO GUI backend (Flask JSON API)"
+authors = [{ name = "Dulitha Prasanna" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "flask>=3",
+  "pydantic>=2",
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "amlro @ git+https://github.com/RxnRover/amlro.git",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "black",
+]
+
+[project.scripts]
+amlro-gui = "amlro_gui.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

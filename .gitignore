@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# PyInstaller build output
+build/
+dist/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Local dev experiment data (WORKSPACE_ROOT default)
+backend/workspace/
+
+# Editor/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

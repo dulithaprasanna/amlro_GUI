@@ -1,8 +1,8 @@
-# Migration notes: `amlro_interface` (original) → `amlro_gui` (this rewrite)
+# Design notes
 
-Living table mapping the old Flask routes to their new API/frontend
-equivalents. Filled in as each phase lands — see the refactor plan for phase
-definitions.
+Internal notes on how this app's API surface came together and the reasoning
+behind specific behaviors — kept for maintainers, not required reading to use
+or run the app (see the main [README](../README.md) for that).
 
 | Old route (`amlro_gui/app.py`) | New backend endpoint | New frontend step | Phase | Status |
 |---|---|---|---|---|

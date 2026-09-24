@@ -16,12 +16,37 @@ writing any Python.
 
 ## 📖 Contents
 
+- [Quick install](#-quick-install)
 - [Overview](#-overview)
 - [Architecture](#-architecture)
 - [Getting started](#-getting-started)
+- [Documentation](#-documentation)
 - [Related projects](#-related-projects)
 - [Citation](#-citation)
 - [License](#-license)
+
+## ⚡ Quick install
+
+Prerequisites: **Python 3.10+** and **Node.js 18+**. Two terminals — backend
+and frontend run at the same time.
+
+```
+# Terminal 1 — backend
+cd backend
+python -m venv .venv
+.venv\Scripts\python -m pip install -e ".[dev]"
+.venv\Scripts\python -m flask --app amlro_gui.app run --debug
+```
+
+```
+# Terminal 2 — frontend
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://127.0.0.1:5173` — that's the app. (More detail, including what
+each command does, in [Getting started](#-getting-started) below.)
 
 ## 🔬 Overview
 
@@ -84,6 +109,11 @@ Runs on `http://127.0.0.1:5173` and proxies `/api/*` to the backend on port
 - `npm run lint` — oxlint
 - `npm run format` — Prettier
 - `npm run build` — type-checks (`tsc -b`) then builds to `dist/`
+
+## 📚 Documentation
+
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — code layout, request flow,
+  and how to add a new resource following the existing pattern.
 
 ## 🔗 Related projects
 

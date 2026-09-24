@@ -124,4 +124,6 @@ please cite:
 
 ## License
 
-_Not yet set for this repo. See the note below._
+MIT License. Copyright 2026, Iowa State University. See
+[`LICENSE`](LICENSE) for the full text, including U.S. Government rights
+under contract DE-AC02-07CH11358 for Ames National Laboratory.

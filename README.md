@@ -97,6 +97,10 @@ Runs on `http://127.0.0.1:5173` and proxies `/api/*` to the backend on port
   data-efficient optimization from small initial datasets. This repo has no
   optimization logic of its own; every reaction-scope, training, and
   prediction computation is delegated to AMLRO.
+- **[AMLRO_interface](https://github.com/dulithaprasanna/AMLRO_interface)**
+  — an earlier implementation of this GUI. amlro_gui is a rewrite of it,
+  moving from server-rendered templates and session-cookie state to a Flask
+  JSON API and a React/TypeScript frontend.
 
 ## 📄 Citation
 

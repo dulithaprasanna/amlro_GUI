@@ -23,6 +23,7 @@ required.
 - [Related projects](#related-projects)
 - [Citation](#citation)
 - [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Quick install
 
@@ -131,3 +132,8 @@ please cite:
 MIT License. Copyright 2026, Iowa State University. See
 [`LICENSE`](LICENSE) for the full text, including U.S. Government rights
 under contract DE-AC02-07CH11358 for Ames National Laboratory.
+
+## Acknowledgments
+
+Developed with the assistance of Claude Code, Anthropic's AI coding
+assistant.

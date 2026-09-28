@@ -22,7 +22,7 @@ import {
 } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import { useNavigate } from 'react-router-dom';
-import amlroWorkflow from '../assets/amlro_workflow.jpg';
+import amlroWorkflow from '../assets/AMLRO_workflow.jpg';
 import {
   useCreateExperiment,
   useExperiments,

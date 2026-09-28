@@ -12,7 +12,7 @@ required.
 ![React](https://img.shields.io/badge/react-19-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-6.0-3178C6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-8-646CFF?logo=vite&logoColor=white)
-![Status](https://img.shields.io/badge/status-active%20development-brightgreen)
+![CI](https://github.com/dulithaprasanna/amlro_GUI/actions/workflows/ci.yml/badge.svg)
 
 ## Contents
 
